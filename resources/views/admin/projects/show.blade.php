@@ -13,6 +13,14 @@
         </div>
 
         <div>
+            @if ($project->type)
+                <div class="mb-3">
+                    <label>Type:</label>
+                    <p class="badge text-bg-success fs-6 ms-2">{{ $project->type->name }}</p>
+                </div>
+            @endif
+
+
             <div class="mb-5">
                 <label>Titolo:</label>
                 <p>{{ $project->title }}</p>

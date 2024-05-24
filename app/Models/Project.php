@@ -15,5 +15,5 @@ class Project extends Model
         return $this->belongsTo(Type::class);
     }
 
-    protected $fillable = ['title', 'description'];
+    protected $fillable = ['title', 'type_id', 'description'];
 }

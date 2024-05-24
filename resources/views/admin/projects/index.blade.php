@@ -38,8 +38,8 @@
                         <tr>
                             <td>{{ $project->title }}</td>
 
-                            {{-- tramite one to many mi ricavo il nome del Type associato al rispettivo Project --}}
-                            <td>{{ $project->type->name }}</td>
+                            {{-- tramite one to many mi ricavo il nome del Type associato al rispettivo Project, e con ? nullsafeoperator, mi restituisce il name solo se esiste, seza dare errori --}}
+                            <td>{{ $project->type?->name }}</td>
 
                             <td>{{ $project->description }}</td>
 
