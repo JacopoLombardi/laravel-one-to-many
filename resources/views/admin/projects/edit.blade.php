@@ -48,6 +48,20 @@
                     <h6 class="text-danger">{{ $message }}</h6>
                 @enderror
 
+
+                <select class="form-select w-50 mt-3" name="type_id">
+                    <option value="">Selected Type</option>
+                    @foreach ($types as $type)
+                        <option
+                          value="{{ $type->id }}"
+                          @if (old('type_id', $project->type?->id) == $type->id) selected @endif
+                        >
+                          {{ $type->name }}
+                        </option>
+                    @endforeach
+                </select>
+
+
                 <textarea
                   class="form-control w-50 my-4"
                   placeholder="Descrizione"
