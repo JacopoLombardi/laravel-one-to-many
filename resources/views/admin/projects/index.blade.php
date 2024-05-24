@@ -27,6 +27,7 @@
                 <thead>
                     <tr class="fs-5">
                         <th scope="col">Titolo</th>
+                        <th scope="col">Type</th>
                         <th scope="col">Descrizione</th>
                         <th scope="col">Azioni</th>
                     </tr>
@@ -36,6 +37,8 @@
                     @foreach ($projects as $project)
                         <tr>
                             <td>{{ $project->title }}</td>
+
+                            <td> ----- </td>
 
                             <td>{{ $project->description }}</td>
 
