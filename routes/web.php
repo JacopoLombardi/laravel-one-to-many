@@ -43,6 +43,9 @@ Route::middleware(['auth', 'verified'])
             Route::resource('types', TypeController::class)->except([
                 'created', 'edit', 'show'
             ]);
+
+            //rotte custom
+            Route::get('type-project', [TypeController::class, 'typeProjects'])->name('type-projects');
         });
 
 

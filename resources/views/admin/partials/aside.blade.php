@@ -16,5 +16,12 @@
         <li>
             <a href="{{ route('admin.types.index') }}"><i class="fa-solid fa-table-list"></i>Type</a>
         </li>
+
+
+
+
+        <li class="mt-5">
+            <a href="{{ route('admin.type-projects') }}"><i class="fa-solid fa-clone"></i>Type & Project</a>
+        </li>
     </ul>
 </aside>
