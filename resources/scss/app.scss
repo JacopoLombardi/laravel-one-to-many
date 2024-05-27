@@ -18,7 +18,7 @@ header{
 
 aside{
     height: calc(100vh - 80px);
-    width: 220px;
+    min-width: 220px;
     ul{
         list-style: none;
         li{
@@ -45,9 +45,8 @@ aside{
 
 
 
-
 .container_table{
-    height: 500px;
+    height: 700px;
     overflow: auto;
     &::-webkit-scrollbar{
         width: 10px;
@@ -66,15 +65,20 @@ aside{
         border-radius: 20px;
         background-color: rgb(226, 226, 226);
     }
-    td{
+}
 
-        input,
-        textarea{
+
+.container_table_s{
+    height: 600px;
+    overflow: auto;
+    td{
+        input{
             border: none;
             outline: none;
         }
     }
 }
+
 
 
 

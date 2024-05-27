@@ -5,7 +5,7 @@
 @section('content')
 
 
-    <div class="container">
+    <div class="container-fluid me-5">
 
         <div class="text-center my-4">
             <h1>Projects</h1>
@@ -22,8 +22,8 @@
         {{-- /////////////////// --}}
 
 
-        <div class="container_table">
-            <table class="table w-75">
+        <div class="container_table px-5 pt-4">
+            <table class="table w-100">
                 <thead>
                     <tr class="fs-5">
                         <th scope="col">Titolo</th>
@@ -43,7 +43,7 @@
 
                             <td>{{ $project->description }}</td>
 
-                            <td>
+                            <td class="py-4">
                                 <div class="d-flex">
                                     <a
                                       href="{{ route('admin.projects.show', $project) }}"

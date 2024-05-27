@@ -39,8 +39,8 @@
         {{-- /////////////////// --}}
 
 
-        <div class="container_table">
-            <table class="table w-75">
+        <div class="container_table_s">
+            <table class="table w-25">
                 <thead>
                     <tr class="fs-5">
                         <th scope="col">Name</th>
@@ -56,6 +56,7 @@
                                   action="{{ route('admin.technologies.update', $technology) }}"
                                   method="POST"
                                   id="form-edit-{{ $technology->id }}"
+                                  class="m-0"
                                   >
                                     @csrf
                                     @method('PUT')
