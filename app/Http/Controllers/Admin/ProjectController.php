@@ -16,12 +16,14 @@ class ProjectController extends Controller
     public function index()
     {
         if(isset($_GET['stringSearch'])){
-            $projects = Project::where('title', 'LIKE', '%' . $_GET['stringSearch'] . '%');
+            $projects = Project::where('title', 'LIKE', '%' . $_GET['stringSearch'] . '%')->get();
+            $projects_count = Project::where('title', 'LIKE', '%' . $_GET['stringSearch'] . '%')->count();
         }else{
-            $projects = Project::All();
+            $projects = Project::all();
+            $projects_count = Project::count();
         }
 
-        return view('admin.projects.index', compact('projects'));
+        return view('admin.projects.index', compact('projects', 'projects_count'));
     }
 
     /**

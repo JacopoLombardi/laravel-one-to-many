@@ -7,7 +7,7 @@
 
             <div class="d-flex align-items-center">
                 <div class="me-5">
-                    <form class="d-flex" action="{{ route('admin.projects.index') }}" method="GET">
+                    <form class="d-flex" action="{{ route('admin.projects.index') }}" method="GET" role="search">
                         <input class="form-control me-3" type="search" placeholder="Search Project" name="stringSearch">
                         <button class="btn btn-success me-5" type="submit">Cerca</button>
                     </form>

@@ -8,7 +8,7 @@
     <div class="container">
 
         <div class="text-center my-5">
-            <h1 class="mb-4">Projects</h1>
+            <h1 class="mb-4">Project</h1>
             <h2>{{ $project->title }}</h2>
         </div>
 
